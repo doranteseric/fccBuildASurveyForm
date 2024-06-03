@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Orienta&family=Reddit+Mono:wght@200..900&family=Tangerine:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Lugrasimo&family=Orienta&family=Reddit+Mono:wght@200..900&family=Tangerine:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+  <body>
+    <header>
+      <h1 id="title">VVardenfell Visitor Application</h1>
+    </header>
+    <main>
+        <p id="description">We're excited to meet you outlander. As you know visitation to our country has historically been forbidden but this has recently changed and in order to control the inflow of visitors we must first consider the value you bring. To consider you for this life changing visitation please fill out the form so we can get to know you. If alllowed, we caution you to observe our traditions outlander.</p>
+        <form id="survey-form">
+          <!--May need fieldsets-->
+          <label id="name-label" for="name">Name<input id="name"type="text" placeholder="John Doe" required></label>
+          <label id="email-label" for="email">Email<input id="email" type="email" placeholder="johndoe@email.com" required></label>
+          <label id="number-label" for="age">Age (optional)<input type="number" min="13" max="120" placeholder="Age" id="number"></label>
+          <label>Which option best describes the focus of your skill set?</label>
+          <select id="dropdown">
+            <option disabled selected value>Select focus</option>
+            <option value="mage">Mage</option>
+            <option value="fighter">Fighter</option>
+            <option value="stealth">Stealth</option>
+          </select>
+          
+          <label>Are you interested in citizenship?</label>
+          <label for="radio-definitely"><input id="radio-definitely" type="radio" name="recommend" value="definitely" checked> Definitely</label>
+          <label for="radio-maybe"><input id="radio-maybe" type="radio" name="recommend" value="maybe"> Maybe</label>
+          <label for="radio-visiting"><input id="radio-visiting" type="radio" name="recommend" value="visiting"> Just Visiting</label>
+          
+          <label>What areas would you like to visit? (Check all that apply)</label>
+          <label for="checkbox-great-houses"><input type="checkbox" value="Telvanni Great Houses" id="checkbox-great-houses">Telvanni Great Houses</label>
+          <label for="checkbox-ashlands"><input type="checkbox" value="The Ashlands" id="checkbox-ashlands">The Ashlands</label>
+          <label for="checkbox-vivec-city"><input type="checkbox" value="Vivec City" id="checkbox-vivec-city">Vivec City</label>
+          <label for="checkbox-red-mountain"><input type="checkbox" value="Red Mountain" id="checkbox-red-mountain">Red Mountain</label>
+          <br>
+          <label>List any activites you intend to participate in:
+          <textarea placeholder="e.g. I'm here to harvest Nirnroot"></textarea>
+          </label>
+          <input type="submit" id="submit">
+        </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024. Eric Dorantes</p>  
+    </footer>
+    
+  </body
+</html>
